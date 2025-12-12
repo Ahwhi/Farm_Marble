@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PDL>
+	<packet name="C_Register">
+		<string name="accountId"/>
+		<string name="accountPw"/>
+	</packet>
+	<packet name="S_RegisterAccept">
+		<bool name="isSuccess"/>
+		<int name="failReason"/>
+	</packet>
+	<packet name="C_AutoLogin">
+		<string name="accessToken"/>
+	</packet>
+	<packet name="S_AutoLoginAccept">
+		<bool name="isSuccess"/>
+		<int name="playerId"/>
+		<string name="accountId"/>
+		<int name="win"/>
+		<int name="lose"/>
+		<float name="winP"/>
+		<int name="failReason"/>
+	</packet>
+	<packet name="C_Login">
+		<string name="accountId"/>
+		<string name="accountPw"/>
+		<bool name="isAutoLogin"/>
+	</packet>
+	<packet name="S_LoginAccept">
+		<bool name="isSuccess"/>
+		<int name="playerId"/>
+		<string name="accountId"/>
+		<int name="win"/>
+		<int name="lose"/>
+		<float name="winP"/>
+		<int name="failReason"/>
+		<string name="accessToken"/>
+	</packet>
+	<packet name="S_BroadcastEnterGame">
+		<int name="playerId"/>
+		<string name="accountId"/>
+	</packet>
+	<packet name="C_RequestRoom">
+	</packet>
+	<packet name="C_LeaveGame">
+	</packet>
+	<packet name="S_BroadcastLeaveGame">
+		<int name="playerId"/>
+	</packet>
+	<packet name="C_RequestPlayerList">
+	</packet>
+	<packet name="S_PlayerList">
+		<list name="player">
+			<bool name="isSelf"/>
+			<int name="playerId"/>
+			<string name="accountId"/>
+			<int name="win"/>
+			<int name="lose"/>
+			<float name="winP"/>
+			<bool name="isCurrentTurn"/>
+			<bool name="isGameReady"/>
+			<int name="money"/>
+			<int name="crops"/>
+			<int name="missile"/>
+		</list>
+	</packet>
+	<packet name="C_Chat">
+		<string name="message"/>
+	</packet>
+	<packet name="S_BroadcastChat">
+		<int name="playerId"/>
+		<string name="accountId"/>
+		<string name="message"/>
+	</packet>
+	<packet name="C_CreateRoom">
+		<string name="roomTitle"/>
+		<int name="maxPlayer"/>
+	</packet>
+	<packet name="S_CreateRoomAccept">
+		<int name="roomId"/>
+		<int name="playerId"/>
+		<string name="accountId"/>
+		<string name="roomTitle"/>
+	</packet>
+	<packet name="S_BroadcastRoomCreated">
+		<int name="roomId"/>
+		<int name="playerId"/>
+		<string name="accountId"/>
+		<string name="roomTitle"/>
+	</packet>
+	<packet name="S_RoomList">
+		<list name="room">
+			<int name="roomId"/>
+			<string name="roomTitle"/>
+			<string name="roomOwnerId"/>
+			<int name="playerNumInRoom"/>
+			<int name="maxPlayer"/>
+			<bool name="isGaming"/>
+		</list>
+	</packet>
+	<packet name="C_JoinRoom">
+		<int name="roomId"/>
+		<string name="accountId"/>
+	</packet>
+	<packet name="S_JoinRoomAccept">
+		<bool name="isSuccess"/>
+		<int name="roomId"/>
+		<string name="roomTitle"/>
+	</packet>
+	<packet name="C_GetRoomInformation">
+	</packet>
+	<packet name="S_GiveRoomInformation">
+		<int name="roomId"/>
+		<string name="roomTitle"/>
+		<int name="maxPlayer"/>
+	</packet>
+	<packet name="C_LeaveRoom">
+	</packet>
+	<packet name="S_LeaveRoomAccept">
+	</packet>
+	<packet name="C_GameReady">
+	</packet>
+	<packet name="S_BroadcastGameReady">
+	</packet>
+	<packet name="S_GameStart">
+	</packet>
+	<packet name="C_RequestFirstTurn">
+	</packet>
+	<packet name="S_BroadcastTurn">
+		<int name="turnNumber"/>
+		<int name="currentPlayerId"/>
+		<string name="currentAccountId"/>
+	</packet>
+	<packet name="C_RollDice">
+	</packet>
+	<packet name="S_BroadcastRollDice">
+		<int name="result"/>
+	</packet>
+	<packet name="C_MoveCharacter">
+		<int name="step"/>
+	</packet>
+	<packet name="S_BroadcastMoveCharacter">
+		<int name="playerId"/>
+		<int name="step"/>
+	</packet>
+	<packet name="C_Build">
+		<int name="ownerPlayerId"/>
+		<int name="currentField"/>
+		<int name="buildingType"/>
+		<int name="buildingLevel"/>
+	</packet>
+	<packet name="S_BroadcastBuild">
+		<int name="ownerPlayerId"/>
+		<int name="currentField"/>
+		<int name="buildingType"/>
+		<int name="buildingLevel"/>
+	</packet>
+	<packet name="C_Destroy">
+		<int name="currentField"/>
+	</packet>
+	<packet name="S_BroadcastDestroy">
+		<int name="currentField"/>
+	</packet>
+	<packet name="C_PlayerUpdate">
+		<int name="playerId"/>
+		<int name="money"/>
+		<int name="crops"/>
+		<int name="missile"/>
+	</packet>
+	<packet name="S_BroadcastPlayerUpdate">
+		<int name="playerId"/>
+		<int name="money"/>
+		<int name="crops"/>
+		<int name="missile"/>
+	</packet>
+	<packet name="C_TurnEnd">
+	</packet>
+	<packet name="S_BroadcastTurnEnd">
+	</packet>
+	<packet name="S_GameResult">
+		<int name="playerId"/>
+		<string name="accountId"/>
+	</packet>
+	<packet name="S_BroadcastQuitPlayer">
+		<int name="playerId"/>
+		<string name="accountId"/>
+	</packet>
+</PDL>
