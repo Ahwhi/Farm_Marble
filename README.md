@@ -40,10 +40,10 @@ Link: https://youtu.be/2DlkIBCsLFs
 ---
 
 ### 🔎 게임 미리보기
-![SCR0](https://github.com/Ahwhi/KBO_MANAGER_2025/blob/main/ScreenShots/0.png)
-![SCR1](https://github.com/Ahwhi/KBO_MANAGER_2025/blob/main/ScreenShots/1.png)
-![SCR2](https://github.com/Ahwhi/KBO_MANAGER_2025/blob/main/ScreenShots/2.png)
-![SCR3](https://github.com/Ahwhi/KBO_MANAGER_2025/blob/main/ScreenShots/3.png)
+![SCR0](https://github.com/Ahwhi/Farm_Marble/blob/main/ScreenShots/1.jpg)
+![SCR1](https://github.com/Ahwhi/Farm_Marble/blob/main/ScreenShots/2.jpg)
+![SCR2](https://github.com/Ahwhi/Farm_Marble/blob/main/ScreenShots/3.jpg)
+![SCR3](https://github.com/Ahwhi/Farm_Marble/blob/main/ScreenShots/4.jpg)
 
 ---
 
